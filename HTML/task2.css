@@ -1,0 +1,31 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            padding: 20px;
+            color: #333;
+        }
+
+        p {
+            color: #2c3e50;
+            padding-left: 18px;
+        }
+
+        .cards {
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .hearts { color: darkred; }
+        .diamonds { color:darkred; }
+        .clubs { color: black; }
+        .spades { color: black; }
+        span {
+            background-color: lightgrey;
+            margin: 2px;
+            padding: 5px;
+            text-transform: capitalize;
+            
+        }

@@ -1,0 +1,1 @@
+print("I dont know how to complete task from 4 to 6(")

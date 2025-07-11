@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card game</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .cards {
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 20px;
+        }
+
+        .hearts { color: red; }
+        .diamonds { color: red; }
+        .clubs { color: black; }
+        .spades { color: black; }
+    </style>
+</head>
+<body>
+    <h1>Player 1:</h1>
+    <div class="cards">
+        <span class="clubs">2&#9827;</span> 
+        <span class="hearts">9&#9829;</span> 
+        <span class="hearts">6&#9829;</span> 
+        <span class="diamonds">A&#9830;</span> 
+        <span class="spades">Q&#9824;</span> 
+        <span class="clubs">J&#9827;</span>
+    </div>
+
+    <h1>Player 2:</h1>
+    <div class="cards">
+        <span class="diamonds">3&#9830;</span> 
+        <span class="clubs">A&#9827;</span> 
+        <span class="clubs">10&#9827;</span> 
+        <span class="diamonds">K&#9830;</span> 
+        <span class="spades">8&#9824;</span> 
+        <span class="hearts">3&#9829;</span>
+    </div>
+</body>
+</html>
