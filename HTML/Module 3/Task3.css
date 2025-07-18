@@ -1,0 +1,81 @@
+/* Скидання стилів і базові налаштування */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Заголовок, меню, футер */
+header, nav, footer {
+  width: 95%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #802050;
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #501530;
+}
+
+footer {
+  background-color: #601835;
+}
+
+/* Основна обгортка з float */
+.content-wrapper {
+  width: 95%;
+  margin: 0 auto 10px auto;
+  overflow: hidden;
+}
+
+/* Ліві панелі */
+aside.left {
+  float: left;
+  width: 15%;
+  background-color: #d080a0;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Права панель */
+aside.right {
+  float: right;
+  width: 15%;
+  background-color: #d080a0;
+  color: white;
+  text-align: center;
+  padding: 120px 10px;
+  font-weight: bold;
+}
+
+/* Основний контент */
+main {
+  float: left;
+  width: 68%;
+  background-color: #c080a0;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+main h2 {
+  margin-bottom: 15px;
+}
+
+main section {
+  background-color: #e5a3c7;
+  margin: 10px 0;
+  padding: 20px;
+}

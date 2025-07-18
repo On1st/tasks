@@ -1,0 +1,27 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(241, 238, 238);
+}
+.container{
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.product {
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    margin : 5px;
+    padding: 15px;
+    width: 140px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}

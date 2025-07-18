@@ -1,0 +1,43 @@
+img{
+    width: 128px;
+    height: 128px;
+    display: block;
+    margin: 0 
+}
+.name{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+.container{
+    background-color:darkgray;
+    width: 400px;
+    height: 800px;
+}
+body{
+    background-color: lightgray;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: left;
+    
+
+}
+.element{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.element:hover{
+    background-color: #444;
+}
+.container a{
+    text-decoration: none;
+}
+.footer{
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 20px;
+}
