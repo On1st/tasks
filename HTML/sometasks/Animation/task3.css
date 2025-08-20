@@ -1,0 +1,61 @@
+
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial;
+      background: #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .block {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 900px;
+      height: 250px; 
+      margin: 0 auto;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 6px 16px rgba(0,0,0,.12);
+    }
+
+    .text-part, .image-part {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-part {
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 500;
+      color: #111;
+    }
+
+    .image-part img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1s ease;
+    }
+
+    
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0);
+      transition: background .3s ease;
+      z-index: 2;
+    }
+
+    .block:hover .overlay {
+      background: rgba(0,0,0,0.5);
+    }
+
+    .block:hover img {
+      transform: scale(1.1);
+    }
