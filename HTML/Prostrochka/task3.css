@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.plans {
+  display: flex;
+  gap: 20px;
+}
+
+.plan {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.8s;
+}
+
+.plan:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.plan h2 {
+  margin: 0;
+  font-size: 18px;
+  border-top: 4px solid transparent;
+  padding-top: 10px;
+}
+
+.plan h1 {
+  font-size: 36px;
+  margin: 15px 0 5px;
+}
+
+.plan p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.plan ul li {
+  margin: 8px 0;
+}
+
+.plan button {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.enterprise h2 { border-color: #c0392b; }
+.professional h2 { border-color: #d35400; }
+.standart h2 { border-color: #2980b9; }
+.basic h2 { border-color: #27ae60; }
+
+.enterprise button { background: #c0392b; }
+.professional button { background: #d35400; }
+.standart button { background: #2980b9; }
+.basic button { background: #27ae60; }

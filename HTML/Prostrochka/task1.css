@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.table-container {
+  width: 600px;
+  height: 300px;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  background: #f9f9f9;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: #ddd;
+  z-index: 2;
+}
+
+tbody td:first-child,
+thead th:first-child {
+  position: sticky;
+  left: 0;
+  background: #eee;
+  z-index: 3;
+}

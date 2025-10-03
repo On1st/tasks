@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* бокове меню */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60px;
+  background: #555;
+  color: #fff;
+  overflow: hidden;
+  transition: width 1s;
+  z-index: 1000;
+}
+
+.sidebar:hover {
+  width: 220px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.sidebar ul li:hover {
+  background: #444;
+}
+
+.sidebar ul li i {
+  font-size: 20px;
+  min-width: 25px;
+  text-align: center;
+}
+
+.sidebar ul li span {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.sidebar:hover ul li span {
+  opacity: 1;
+}
+
+/* вміст */
+.content {
+  margin-left: 60px;
+  padding: 20px;
+}
