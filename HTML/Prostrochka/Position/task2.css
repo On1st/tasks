@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #4CAF50;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 40px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu > li:hover > a {
+  background-color: #3e8e41;
+}
+
+/* Підменю */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #4CAF50;
+  min-width: 180px;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu li a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.submenu li:hover > a {
+  background-color: #3e8e41;
+}
+
+/* Відображення підменю при наведенні */
+.menu li:hover > .submenu {
+  display: block;
+}
+
+/* Вкладене підменю */
+.submenu li:hover > .submenu {
+  display: block;
+  top: 0;
+  left: 100%;
+}
+
+/* Залишити темним батьківський пункт при відкритому підменю */
+.menu li:hover > a,
+.submenu li:hover > a {
+  background-color: #3e8e41;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}

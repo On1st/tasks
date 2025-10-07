@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+tr:first-child th {
+    background-color: #6b7aa1;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    border-bottom: 3px solid #fff;
+}
+
+th:nth-child(2) { background-color: #50689a; }
+th:nth-child(3) { background-color: #324e8a; }
+th:nth-child(4) { background-color: #1d2e6a; }
+th:last-child { background-color: #101f50; }
+
+td, th {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(2) td {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+tr:nth-child(2) td:nth-child(2)::after { content: " $10 per month"; display: block; font-size: 14px; }
+tr:nth-child(2) td:nth-child(3)::after { content: " $30 per month"; display: block; font-size: 14px; }
+tr:nth-child(2) td:nth-child(4)::after { content: " $59 per month"; display: block; font-size: 14px; }
+tr:nth-child(2) td:last-child::after { content: " $99 per month"; display: block; font-size: 14px; }
+
+tr:last-child td button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+tr:last-child td button:hover {
+    background-color: #324e8a;
+    color: white;
+}
